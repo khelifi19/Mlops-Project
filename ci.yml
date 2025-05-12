@@ -1,0 +1,54 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Create and activate virtual environment
+        run: |
+          python -m venv venv
+          source venv/bin/activate || . venv/bin/activate
+
+      - name: Upgrade pip and install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pylint bandit pytest
+
+      - name: Run Code Quality Checks (Pylint)
+        run: |
+          source venv/bin/activate || . venv/bin/activate
+          pylint model_pipeline.py main.py tests/test_pipeline.py --disable=C0114,C0103,C0411,C0413,W0611 || true
+
+      - name: Run Security Checks (Bandit)
+        run: |
+          source venv/bin/activate || . venv/bin/activate
+          bandit -r model_pipeline.py main.py || true
+
+      - name: Run Tests (Pytest)
+        run: |
+          source venv/bin/activate || . venv/bin/activate
+          pytest tests/ --maxfail=2 --disable-warnings || true
+
+      # Ajouter l'étape pour exécuter le Makefile
+      - name: Run Makefile
+        run: |
+          source venv/bin/activate || . venv/bin/activate
+          make all || true

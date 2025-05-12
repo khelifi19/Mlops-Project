@@ -1,0 +1,14 @@
+# Ignore Python virtual environments and cache files
+venv/
+__pycache__/
+
+# Ignore large datasets and artifacts
+*.csv
+*.log
+mlflow.db
+mlruns/
+
+# Ignore Git and OS metadata files
+.git/
+.DS_Store
+

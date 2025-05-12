@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/12c04a22eb3a4ca795ba6f1e4478e375/artifacts
+end_time: 1747041062335
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 12c04a22eb3a4ca795ba6f1e4478e375
+run_name: brawny-kite-680
+run_uuid: 12c04a22eb3a4ca795ba6f1e4478e375
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747041060274
+status: 3
+tags: []
+user_id: yass

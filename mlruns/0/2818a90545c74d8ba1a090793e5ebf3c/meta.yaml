@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/2818a90545c74d8ba1a090793e5ebf3c/artifacts
+end_time: 1746888881644
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2818a90545c74d8ba1a090793e5ebf3c
+run_name: grandiose-mole-354
+run_uuid: 2818a90545c74d8ba1a090793e5ebf3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746888879692
+status: 4
+tags: []
+user_id: yass

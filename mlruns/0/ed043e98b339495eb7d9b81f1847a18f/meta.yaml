@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ed043e98b339495eb7d9b81f1847a18f/artifacts
+end_time: 1747040461742
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ed043e98b339495eb7d9b81f1847a18f
+run_name: abundant-wolf-684
+run_uuid: ed043e98b339495eb7d9b81f1847a18f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1747040455394
+status: 4
+tags: []
+user_id: yass

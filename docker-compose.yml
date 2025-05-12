@@ -1,0 +1,30 @@
+version: '3.7'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.10
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9200:9200"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.17.10
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+
+  netdata:
+    image: netdata/netdata:latest
+    container_name: netdata
+    environment:
+      - NETDATA_CLAIM_TOKEN=your-claim-token-here
+      - NETDATA_CLAIM_URL=your-claim-url-here
+    ports:
+      - "19999:19999"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always

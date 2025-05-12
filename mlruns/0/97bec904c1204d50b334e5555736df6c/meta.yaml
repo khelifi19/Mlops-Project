@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/97bec904c1204d50b334e5555736df6c/artifacts
+end_time: 1746992282680
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 97bec904c1204d50b334e5555736df6c
+run_name: stately-croc-669
+run_uuid: 97bec904c1204d50b334e5555736df6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746992281322
+status: 4
+tags: []
+user_id: yass

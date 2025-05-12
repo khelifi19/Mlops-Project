@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/5c3ca1724a9c436eb03359e85a09efef/artifacts
+end_time: 1746893071261
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5c3ca1724a9c436eb03359e85a09efef
+run_name: gregarious-hare-239
+run_uuid: 5c3ca1724a9c436eb03359e85a09efef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746893069463
+status: 4
+tags: []
+user_id: yass

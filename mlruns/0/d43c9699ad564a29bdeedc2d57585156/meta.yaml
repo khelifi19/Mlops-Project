@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/d43c9699ad564a29bdeedc2d57585156/artifacts
+end_time: 1746993191029
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d43c9699ad564a29bdeedc2d57585156
+run_name: exultant-ox-281
+run_uuid: d43c9699ad564a29bdeedc2d57585156
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746993189709
+status: 4
+tags: []
+user_id: yass

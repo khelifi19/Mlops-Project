@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/59292e45c5e54f12bd1d29b6fef9d19b/artifacts
+end_time: 1746992268851
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 59292e45c5e54f12bd1d29b6fef9d19b
+run_name: gregarious-elk-398
+run_uuid: 59292e45c5e54f12bd1d29b6fef9d19b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746992267587
+status: 4
+tags: []
+user_id: yass
